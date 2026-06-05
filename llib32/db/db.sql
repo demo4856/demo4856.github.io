@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: localhost
--- Время создания: Июн 05 2026 г., 07:51
+-- Время создания: Июн 05 2026 г., 16:52
 -- Версия сервера: 10.4.28-MariaDB
 -- Версия PHP: 8.2.4
 
@@ -73,10 +73,10 @@ CREATE TABLE `tovar` (
 
 CREATE TABLE `user` (
   `id_user` int(11) NOT NULL,
-  `role` int(50) NOT NULL,
-  `full_name` int(100) NOT NULL,
-  `login` int(50) NOT NULL,
-  `password` int(255) NOT NULL
+  `role` varchar(50) NOT NULL,
+  `full_name` varchar(100) NOT NULL,
+  `login` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
